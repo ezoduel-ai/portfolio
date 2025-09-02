@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ismail Hamid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fontsource/preahvihear@latest/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#11071F] text-white font-sans min-h-screen">
+    <style>
+      /* Glow effect on hover */
+      .glow:hover {
+        filter: drop-shadow(0 0 10px rgba(126, 34, 206, 0.7));
+      }
+    </style>
+    <!-- Navbar -->
+    <header class="bg-[#1A0B2E] fixed top-0 w-full z-50">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="text-lg font-bold">Ismail Hamid | Gallery</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a href="/index.html#home" class="hover:text-purple-400">Home</a>
+          <a href="/index.html#about" class="hover:text-purple-400">About</a>
+          <a href="/gallery.html" class="hover:text-purple-400">Gallery</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#1A0B2E] px-6 pb-4 space-y-2"
+      >
+        <a href="/index.html#home" class="block hover:text-purple-400">Home</a>
+        <a href="/index.html#about" class="block hover:text-purple-400"
+          >About</a
+        >
+        <a href="/gallery.html" class="block hover:text-purple-400">Gallery</a>
+      </div>
+    </header>
+
+    <!-- Page Title -->
+    <section class="pt-40 px-6 text-center">
+      <h2
+        class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12"
+        style="font-family: 'Preahvihear', sans-serif"
+      >
+        Gallery
+      </h2>
+      <p class="text-gray-300 text-lg md:text-xl">
+        A showcase of my design projects and creative works.
+      </p>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section
+      id="gallery"
+      class="px-6 py-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+    >
+      <!-- Example Project Card -->
+      <div
+        class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
+      >
+        <img
+          src="images/projects/lezr-project.jpg"
+          alt="Project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">Featured Project</p>
+          <h3 class="text-xl font-bold">LEZR for Technology</h3>
+        </div>
+      </div>
+
+      <div
+        class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
+      >
+        <img
+          src="images/projects/lamar-project.jpg"
+          alt="Project"
+          class="w-full h-64 object-cover"
+        />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">Featured Project</p>
+          <h3 class="text-xl font-bold">Lamar Hotel</h3>
+        </div>
+      </div>
+
+      <!-- Add more project cards here -->
+    </section>
+
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
