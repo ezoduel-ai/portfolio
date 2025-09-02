@@ -12,67 +12,41 @@
   </head>
   <body class="bg-[#11071F] text-white font-sans min-h-screen">
     <style>
-      /* Glow effect on hover */
       .glow:hover {
         filter: drop-shadow(0 0 10px rgba(126, 34, 206, 0.7));
       }
     </style>
+
     <!-- Navbar -->
     <header class="bg-[#1A0B2E] fixed top-0 w-full z-50">
-      <div
-        class="container mx-auto flex items-center justify-between px-6 py-4"
-      >
+      <div class="container mx-auto flex items-center justify-between px-6 py-4">
         <h1 class="text-lg font-bold">Ismail Hamid | Gallery</h1>
         <nav class="hidden md:flex space-x-8">
-          <a href="/portfolio/index.html#home" class="hover:text-purple-400"
-            >Home</a
-          >
-          <a href="/portfolio/index.html#about" class="hover:text-purple-400"
-            >About</a
-          >
+          <a href="/portfolio/index.html#home" class="hover:text-purple-400">Home</a>
+          <a href="/portfolio/index.html#about" class="hover:text-purple-400">About</a>
           <a href="#gallery" class="hover:text-purple-400">Gallery</a>
         </nav>
-        <!-- Mobile Menu Button -->
         <button id="menu-btn" class="md:hidden focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
+
       <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="hidden md:hidden bg-[#1A0B2E] px-6 pb-4 space-y-2"
-      >
-        <a href="/portfolio/index.html#home" class="block hover:text-purple-400"
-          >Home</a
-        >
-        <a
-          href="/portfolio/index.html#about"
-          class="block hover:text-purple-400"
-          >About</a
-        >
+      <div id="mobile-menu" class="hidden md:hidden bg-[#1A0B2E] px-6 pb-4 space-y-2">
+        <a href="/portfolio/index.html#home" class="block hover:text-purple-400">Home</a>
+        <a href="/portfolio/index.html#about" class="block hover:text-purple-400">About</a>
         <a href="#gallery" class="block hover:text-purple-400">Gallery</a>
       </div>
     </header>
 
     <!-- Page Title -->
     <section class="pt-40 px-6 text-center">
-      <h2
-        class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12"
-        style="font-family: 'Preahvihear', sans-serif"
-      >
+      <h2 class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12"
+        style="font-family: 'Preahvihear', sans-serif">
         Gallery
       </h2>
       <p class="text-gray-300 text-lg md:text-xl">
@@ -81,102 +55,66 @@
     </section>
 
     <!-- Gallery Grid -->
-    <section
-      id="gallery"
-      class="px-6 py-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-    >
-      <!-- Example Project Card -->
-      <div
-        class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
-      >
-        <img
-          src="images/projects/lezr-project.jpg"
-          alt="Project"
-          class="w-full h-64 object-cover"
-        />
+    <section id="gallery"
+      class="px-6 py-16 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Project 1: LEZR for Technology -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/lezr-project.jpg" alt="LEZR Project" class="w-full h-64 object-cover" />
         <div class="p-4">
           <p class="text-purple-400 text-sm mb-1">Featured Project</p>
           <h3 class="text-xl font-bold">LEZR for Technology</h3>
         </div>
       </div>
 
-      <div
-        class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
-      >
-        <img
-          src="images/projects/lamar-project.jpg"
-          alt="Project"
-          class="w-full h-64 object-cover"
-        />
+      <!-- Project 2: Lamar Hotel -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/lamar-project.jpg" alt="Lamar Hotel" class="w-full h-64 object-cover" />
         <div class="p-4">
           <p class="text-purple-400 text-sm mb-1">Featured Project</p>
           <h3 class="text-xl font-bold">Lamar Hotel</h3>
         </div>
       </div>
-      <div
-  class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
->
-  <img
-    src="images/projects/1-01.png"
-    alt="Blender 3D Projects"
-    class="w-full h-64 object-cover"
-  />
-  <div class="p-4">
-    <p class="text-purple-400 text-sm mb-1">3D Visualization</p>
-    <h3 class="text-xl font-bold">Blender 3D Projects</h3>
-  </div>
-</div>
- 
-<!-- Project 5: Business Cards -->
-<div
-  class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
->
-  <img
-    src="images/projects/2-01.png"
-    alt="Business Cards"
-    class="w-full h-64 object-cover"
-  />
-  <div class="p-4">
-    <p class="text-purple-400 text-sm mb-1">Branding & Print Design</p>
-    <h3 class="text-xl font-bold">Business Cards</h3>
-  </div>
-</div>
 
-<!-- Project 6: Katreen Medical Catalog & Car Wrap -->
-<div
-  class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
->
-  <img
-    src="images/projects/3-01.png"
-    alt="Katreen Medical Catalog & Car Wrap"
-    class="w-full h-64 object-cover"
-  />
-  <div class="p-4">
-    <p class="text-purple-400 text-sm mb-1">Marketing & Advertising</p>
-    <h3 class="text-xl font-bold">Katreen Medical Catalog & Car Wrap</h3>
-  </div>
-</div>
+      <!-- Project 3: Blender 3D Projects -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/1-01.png" alt="Blender 3D Projects" class="w-full h-64 object-cover" />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">3D Visualization</p>
+          <h3 class="text-xl font-bold">Blender 3D Projects</h3>
+        </div>
+      </div>
 
-<!-- Project 7: Logo Animation & Website -->
-<div
-  class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer"
->
-  <img
-    src="images/projects/4-01.png"
-    alt="Logo Animation & Website"
-    class="w-full h-64 object-cover"
-  />
-  <div class="p-4">
-    <p class="text-purple-400 text-sm mb-1">Motion & Web Design</p>
-    <h3 class="text-xl font-bold">Logo Animation & Website</h3>
-  </div>
-</div>
+      <!-- Project 4: Business Cards -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/2-01.png" alt="Business Cards" class="w-full h-64 object-cover" />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">Branding & Print Design</p>
+          <h3 class="text-xl font-bold">Business Cards</h3>
+        </div>
+      </div>
 
-      <!-- Add more project cards here -->
+      <!-- Project 5: Katreen Medical Catalog & Car Wrap -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/3-01.png" alt="Katreen Medical" class="w-full h-64 object-cover" />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">Marketing & Advertising</p>
+          <h3 class="text-xl font-bold">Katreen Medical Catalog & Car Wrap</h3>
+        </div>
+      </div>
+
+      <!-- Project 6: Logo Animation & Website -->
+      <div class="bg-[#1A0B2E] rounded-xl overflow-hidden relative hover:scale-105 transform transition duration-300 cursor-pointer">
+        <img src="images/projects/4-01.png" alt="Logo Animation and Website" class="w-full h-64 object-cover" />
+        <div class="p-4">
+          <p class="text-purple-400 text-sm mb-1">Motion & Web Design</p>
+          <h3 class="text-xl font-bold">Logo Animation & Website</h3>
+        </div>
+      </div>
     </section>
 
+    <!-- Script: Mobile Menu Toggle -->
     <script>
-      // Toggle mobile menu
       const menuBtn = document.getElementById("menu-btn");
       const mobileMenu = document.getElementById("mobile-menu");
       menuBtn.addEventListener("click", () => {
