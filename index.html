@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ismail Hamid</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/@fontsource/preahvihear@latest/index.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#11071F] text-white font-sans min-h-screen">
+    <!-- style="font-family: 'Preahvihear', sans-serif" -->
+    <!-- Navbar -->
+    <header class="bg-[#1A0B2E] fixed top-0 w-full z-50">
+      <div
+        class="container mx-auto flex items-center justify-between px-6 py-4"
+      >
+        <h1 class="text-lg font-bold">Ismail Hamid</h1>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="hover:text-purple-400">Home</a>
+          <a href="#gallery" class="hover:text-purple-400">Gallery</a>
+          <a href="#about" class="hover:text-purple-400">About</a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="md:hidden focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-[#1A0B2E] px-6 pb-4 space-y-2"
+      >
+        <a href="#home" class="block hover:text-purple-400">Home</a>
+        <a href="#gallery" class="block hover:text-purple-400">Gallery</a>
+        <a href="#about" class="block hover:text-purple-400">About</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 pt-64"
+    >
+      <div class="flex flex-col items-center">
+        <!-- Hello Text with Arrow -->
+        <div class="mb-6 flex flex-col md:flex-row items-center space-x-3">
+          <!-- Arrow -->
+          <svg
+            class="w-10 h-10 text-white rotate-45"
+            viewBox="-2.4 -2.4 28.80 28.80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 19.5L7 14.5M12 19.5L17 14.5M12 19.5L12 13M12 9.5C12 7.83333 13 4.5 17 4.5"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+
+          <!-- Text -->
+          <p class="text-gray-300 text-lg">
+            Hello! I am
+            <span class="text-purple-400 font-medium">Ismail Hamid</span>
+          </p>
+        </div>
+        <div class="flex flex-col md:flex-row">
+          <!-- Left Icon with Glow -->
+          <div class="relative flex-shrink-0 mb-10 md:mb-0">
+            <!-- Glow background -->
+            <div
+              class="absolute inset-0 rounded-full bg-[radial-gradient(circle_at_center,white,rgba(126,34,206,0.8),transparent)] blur-2xl"
+            ></div>
+
+            <!-- Avatar -->
+            <img
+              src="images/avatar.png"
+              alt="Avatar"
+              class="relative w-48 h-48 mx-auto md:mx-0 rounded-full"
+            />
+          </div>
+
+          <!-- Right Text -->
+          <div class="relative max-w-xl md:ml-12">
+            <!-- Main Heading -->
+            <p class="text-gray-300">A Designer who</p>
+            <h2 class="text-4xl md:text-5xl font-bold leading-snug">
+              Judges a book <br />
+              by its
+              <span class="relative">
+                <span class="text-purple-400">cover</span>
+                <!-- Circle around "cover" -->
+                <span
+                  class="absolute -inset-1 rounded-full border-2 border-purple-500 -rotate-6 mt-4 h-16"
+                ></span>
+              </span>
+              …
+            </h2>
+            <p class="mt-4 text-gray-400 text-sm">
+              Because if the cover does not impress you, what else can?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About / Intro Section -->
+    <section id="about" class="px-6 py-16 bg-[#11071F] text-white mt-32">
+      <div class="max-w-4xl mx-auto text-center md:text-left">
+        <!-- Title -->
+        <h2
+          class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-8"
+          style="font-family: 'Preahvihear', sans-serif"
+        >
+          I'm a Graphic Designer
+        </h2>
+
+        <!-- Description -->
+        <p
+          class="text-lg md:text-[22px] font-normal tracking-[0.02em] leading-relaxed text-justify"
+          style="font-family: 'Preahvihear', sans-serif"
+        >
+          Highly motivated and passionate UX/UI Designer with a strong
+          foundation in user-centered design principles and a comprehensive
+          skill set across industry-standard design tools. Eager to contribute
+          to innovative projects and grow within a dynamic team, leveraging
+          proficiency in Adobe Creative Suite, Blender, and Figma to create
+          intuitive, accessible, and visually compelling digital experiences.
+          Seeking to apply theoretical knowledge and practical design skills to
+          real-world challenges while continuously expanding expertise in the
+          field.
+        </p>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section
+      id="work"
+      class="px-6 py-16 bg-[#11071F] text-white relative mb-20"
+    >
+      <div class="max-w-6xl mx-auto relative">
+        <!-- Section Title -->
+        <h2
+          class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12 text-center"
+          style="font-family: 'Preahvihear', sans-serif"
+        >
+          Work Experience
+        </h2>
+
+        <!-- Glow between cards -->
+        <div
+          class="absolute inset-0 flex justify-center items-center pointer-events-none"
+        >
+          <div
+            class="md:w-[630px] md:h-[630px] bg-[radial-gradient(circle,_rgba(126,34,206,0.5),transparent)] rounded-full blur-3xl"
+          ></div>
+        </div>
+
+        <!-- Cards -->
+        <div class="grid md:grid-cols-2 gap-12 relative z-10">
+          <!-- Experience 1 -->
+          <div class="relative flex items-center bg-[#1A0B2E] p-6 rounded-xl">
+            <!-- Glow Dot -->
+            <!-- <div
+              class="absolute -left-4 -top-4 w-20 h-20 rounded-full bg-[radial-gradient(circle_at_center,white,rgba(126,34,206,0.5),transparent)] blur-2xl"
+            ></div> -->
+
+            <!-- Icon -->
+            <img
+              src="images/lezr-icon.png"
+              alt="LEZR Icon"
+              class="w-16 h-16 mr-6 relative z-10"
+            />
+
+            <!-- Text -->
+            <div class="relative z-10 flex-1">
+              <h3 class="text-xl font-bold mb-1">
+                LEZR for Information Technology
+              </h3>
+              <p class="text-gray-300 mb-3">UX/UI Designer</p>
+              <button
+                class="w-[119px] h-[33px] border rounded-[10px] text-white bg-purple-500 hover:bg-purple-600 border-purple-500 transition"
+                onclick="openDialog('leZR')"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="relative flex items-center bg-[#1A0B2E] p-6 rounded-xl">
+            <!-- Glow Dot -->
+            <!-- <div
+              class="absolute -left-4 -top-4 w-20 h-20 rounded-full bg-[radial-gradient(circle_at_center,white,rgba(126,34,206,0.5),transparent)] blur-2xl"
+            ></div> -->
+
+            <!-- Icon -->
+            <img
+              src="images/sultan-icon.png"
+              alt="Sultan Icon"
+              class="w-16 h-16 mr-6 relative z-10"
+            />
+
+            <!-- Text -->
+            <div class="relative z-10 flex-1">
+              <h3 class="text-xl font-bold mb-1">
+                Sultan for Advertising and Printing
+              </h3>
+              <p class="text-gray-300 mb-3">Designer & Printer</p>
+              <!-- class="px-4 py-2 bg-purple-500 rounded hover:bg-purple-600" -->
+              <button
+                class="w-[119px] h-[33px] border rounded-[10px] text-white bg-purple-500 hover:bg-purple-600 border-purple-500 transition"
+                onclick="openDialog('sultan')"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Software Section (Circular Layout) -->
+    <section id="software" class="px-6 py-16 text-white relative my-16">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2
+          class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12"
+          style="font-family: 'Preahvihear', sans-serif"
+        >
+          Main Software
+        </h2>
+
+        <!-- Circle Container -->
+        <div class="relative w-80 h-80 mx-auto">
+          <!-- Center (optional) -->
+          <div
+            class="absolute inset-0 rounded-full border border-purple-500 opacity-20"
+          ></div>
+
+          <!-- Icons (positioned around circle) -->
+          <img
+            src="images/skills/photoshop.png"
+            alt="Photoshop"
+            class="absolute w-16 h-16 top-0 left-1/2 -translate-x-1/2 transform hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/illustrator.png"
+            alt="Illustrator"
+            class="absolute w-16 h-16 top-1/4 right-0 transform -translate-y-1/2 hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/indesign.png"
+            alt="InDesign"
+            class="absolute w-16 h-16 bottom-1/4 right-0 transform translate-y-1/2 hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/premiere.png"
+            alt="Premiere Pro"
+            class="absolute w-16 h-16 bottom-0 left-1/2 -translate-x-1/2 transform hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/aftereffects.png"
+            alt="After Effects"
+            class="absolute w-16 h-16 bottom-1/4 left-0 transform translate-y-1/2 hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/blender.png"
+            alt="Blender"
+            class="absolute w-16 h-16 top-1/4 left-0 transform -translate-y-1/2 hover:scale-110 transition duration-300 glow"
+          />
+          <img
+            src="images/skills/figma.png"
+            alt="Figma"
+            class="absolute w-16 h-16 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform hover:scale-110 transition duration-300 glow"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="px-6 py-16 bg-[#11071F] text-white">
+      <div class="max-w-6xl mx-auto text-center">
+        <!-- Section Title -->
+        <h2
+          class="text-5xl md:text-[50px] font-normal tracking-[0.02em] mb-12"
+          style="font-family: 'Preahvihear', sans-serif"
+        >
+          Projects
+        </h2>
+
+        <!-- Project Column -->
+        <div class="flex flex-col gap-16 relative">
+          <!-- Project 1: Image Right -->
+          <div
+            class="flex flex-col md:flex-row items-center bg-[#1A0B2E] rounded-xl overflow-hidden relative"
+          >
+            <!-- Glow -->
+            <div
+              class="absolute inset-0 flex justify-center items-center pointer-events-none"
+            >
+              <div
+                class="md:w-[630px] md:h-[630px] bg-[radial-gradient(circle,_rgba(126,34,206,0.5),transparent)] rounded-full blur-3xl"
+              ></div>
+            </div>
+
+            <!-- Text -->
+            <div class="p-6 md:w-1/3 z-10 text-left">
+              <p class="text-purple-400 font-semibold mb-1">Featured Project</p>
+              <h3 class="text-2xl font-bold mb-2">LEZR for Technology</h3>
+              <p class="text-gray-300 mb-4">
+                A technology-focused blog covering IT and computer-related
+                topics.
+              </p>
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-2/3 relative flex justify-center items-center">
+              <img
+                src="images/projects/lezr-project.jpg"
+                alt="LEZR Project"
+                class="w-full h-80 md:h-96 object-cover relative z-10 rounded-xl"
+              />
+            </div>
+          </div>
+
+          <!-- Project 2: Image Left -->
+          <div
+            class="flex flex-col md:flex-row-reverse items-center bg-[#1A0B2E] rounded-xl overflow-hidden relative"
+          >
+            <!-- Glow -->
+            <div
+              class="absolute inset-0 flex justify-center items-center pointer-events-none"
+            >
+              <div
+                class="md:w-[630px] md:h-[630px] bg-[radial-gradient(circle,_rgba(126,34,206,0.5),transparent)] rounded-full blur-3xl"
+              ></div>
+            </div>
+
+            <!-- Text -->
+            <div class="p-6 md:w-1/3 z-10 text-right">
+              <p class="text-purple-400 font-semibold mb-1">Featured Project</p>
+              <h3 class="text-2xl font-bold mb-2">Lamar Hotel</h3>
+              <p class="text-gray-300 mb-4">
+                Website highlighting the hotel's services and beautiful views.
+              </p>
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-2/3 relative flex justify-center items-center">
+              <img
+                src="images/projects/lamar-project.jpg"
+                alt="Lamar Hotel Project"
+                class="w-full h-80 md:h-96 object-cover relative z-10 rounded-xl"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Glow effect on hover */
+      .glow:hover {
+        filter: drop-shadow(0 0 10px rgba(126, 34, 206, 0.7));
+      }
+    </style>
+
+    <!-- Dialogs -->
+    <div
+      id="dialog-overlay"
+      class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4"
+    >
+      <div
+        class="bg-[#1A0B2E] p-6 sm:p-8 rounded-xl w-full max-w-md sm:max-w-lg relative"
+      >
+        <button
+          class="absolute top-4 right-4 text-white text-2xl font-bold"
+          onclick="closeDialog()"
+        >
+          &times;
+        </button>
+        <h3 id="dialog-title" class="text-xl sm:text-2xl font-bold mb-4"></h3>
+        <ul
+          id="dialog-tasks"
+          class="list-disc list-inside text-gray-300 max-h-[60vh] overflow-y-auto"
+        ></ul>
+      </div>
+    </div>
+
+    <script>
+      // Toggle mobile menu
+      const menuBtn = document.getElementById("menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <script>
+      function openDialog(job) {
+        const overlay = document.getElementById("dialog-overlay");
+        const title = document.getElementById("dialog-title");
+        const tasks = document.getElementById("dialog-tasks");
+
+        // Clear previous tasks
+        tasks.innerHTML = "";
+
+        if (job === "leZR") {
+          title.textContent =
+            "LEZR for Information Technology - UX/UI Designer";
+
+          const leZRTasks = [
+            "Assisted in user research activities, including conducting interviews and analyzing survey data to identify user pain points and needs.",
+            "Developed wireframes and interactive prototypes using Figma and Adobe XD for various web and mobile applications.",
+            "Contributed to the creation of design system components, maintaining consistency across multiple projects.",
+            "Utilized Adobe Photoshop and Illustrator for creating and optimizing UI assets and graphic elements.",
+            "Explored the integration of 3D elements using Blender for enhanced visual design and micro-interactions in prototypes.",
+            "Collaborated with senior designers to refine user flows, ensuring intuitive and efficient navigation.",
+            "Participated in usability testing sessions, documenting findings and suggesting design improvements.",
+          ];
+
+          leZRTasks.forEach((task) => {
+            tasks.innerHTML += `<li>${task}</li>`;
+          });
+        } else if (job === "sultan") {
+          title.textContent =
+            "Sultan for Advertising and Printing - Designer & Printer";
+
+          const sultanTasks = [
+            "Assisted with the full project lifecycle for print and digital advertising campaigns, from initial client brief to final production and delivery.",
+            "Managed file preparation and pre-press tasks, ensuring all graphic design files were correctly formatted for various printing methods, including large-format and offset printing.",
+            "Operated and maintained digital printing equipment, troubleshooting minor technical issues to ensure high-quality output and minimize production delays.",
+            "Collaborated with a cross-functional team of designers, account managers, and clients to align project goals, provide status updates, and ensure timely completion of all deliverables.",
+            "Maintained an organized digital archive of project files, using a centralized database to streamline access for team members and future reference.",
+            "Contributed to client satisfaction by performing quality checks on finished products, verifying color accuracy, and ensuring all materials met project specifications before dispatch.",
+            "Managed inventory of printing supplies, including paper, ink, and toner, and placed orders as needed to prevent stock shortages.",
+          ];
+
+          sultanTasks.forEach((task) => {
+            tasks.innerHTML += `<li>${task}</li>`;
+          });
+        }
+
+        overlay.classList.remove("hidden");
+      }
+
+      function closeDialog() {
+        document.getElementById("dialog-overlay").classList.add("hidden");
+      }
+    </script>
+  </body>
+</html>
